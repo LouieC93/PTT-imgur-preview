@@ -43,6 +43,7 @@
           const imgUrl = (link as HTMLAnchorElement).href.replace(/\.(jpg|jpeg|png|gif)$/, '.webp');
           const img = document.createElement('img');
           img.dataset.src = imgUrl; // Use data-src for lazy loading
+          img.referrerPolicy = 'no-referrer';
           img.style.maxWidth = '500px';
           img.style.display = 'block';
 
